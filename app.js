@@ -17,9 +17,13 @@ console.log("logo-objektet:", logo)
 logo.style.borderRadius = "10px"
 
 // Vi kan t.ex. lägga till en funktion som körs när användaren
-// klickar på objektet
+// klickar på objektet. En så kallad event-lyssnare.
 logo.onclick = function (e) {
 
-  // Man kan toggla en klass på ett objekt.
+  // Man kan toggla en css-klass på ett objekt.
   logo.classList.toggle("big-logo")
+
+  // Man kan hämta andra objekt/element ur DOMen och manipulera även dem.
+  // Här togglar vi en css-klass på bodyn.
+  document.body.classList.toggle("pitch-black")
 }
