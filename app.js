@@ -3,11 +3,12 @@ console.log("Hello world!")
 
 // Den här raden använder objektet document, som webbläsaren skapat för att vi ska
 // kunna manipulera DOMen. Vi använder document för att hämta en referens till logotypen i sidan och spara den i ev variabel.
-var logo = document.getElementById("js-logo")
-
-console.log("logo-objektet:", logo)
-
-
+var logo = document.getElementById("js-logo");
+let x = document.getElementByID("name");
+console.log("logo-objektet:", logo);
+console.log("name-objektet:", "name");
+x.innerHTML = "Hej hej!"
+x.classList.add("background-color-test")
 /* 
   Nu kan vi använda referensen till objektet/elementet i variabeln
   för att ändra objektet i webbläsaren.

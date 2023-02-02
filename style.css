@@ -25,3 +25,7 @@ body.pitch-black {
 #js-logo.big-logo {
   width: 600px;
 }
+
+.background-color-test {
+  background-color: red;
+}
