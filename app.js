@@ -9,6 +9,23 @@ console.log("logo-objektet:", logo);
 console.log("name-objektet:", "name");
 x.innerHTML = "Hej hej!"
 x.classList.add("background-color-test")
+
+// Nya element
+var firstParagraph = document.createElement("p")
+
+
+// Nya elementens textnoder
+var pText = document.createTextNode("Hej hej! Test text för ny paragraf")
+
+
+// Ge noderna värden
+var firstParagraph = document.getElementById("firstParagraph")
+firstParagraph.appendChild(pText)
+
+// Positionera noderna
+firstParagraph.insertAfter("name")
+
+
 /* 
   Nu kan vi använda referensen till objektet/elementet i variabeln
   för att ändra objektet i webbläsaren.
